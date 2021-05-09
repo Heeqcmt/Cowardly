@@ -1,10 +1,17 @@
-//edit movie page
-
+// page for new movies
 import React from "react";
+import MovieForm from "./MovieForm"
+import CharacterForm from "./CharacterForm"
 
 
-export default function EditMoive(){
+
+export default function EditMovie(){
     return (
-        <div>Edit Movie page</div>
+        <div>
+            <input type="Search"></input>
+            <button>Search</button>
+            <MovieForm/>
+            <CharacterForm/>
+        </div>
     );
 }

@@ -1,9 +1,15 @@
 // page for new movies
 import React from "react";
+import MovieForm from "./MovieForm"
+import CharacterForm from "./CharacterForm"
+
 
 
 export default function NewMovie(){
     return (
-        <div>New Movie page</div>
+        <div>
+            <MovieForm/>
+            <CharacterForm/>
+        </div>
     );
 }
