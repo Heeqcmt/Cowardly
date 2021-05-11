@@ -2,6 +2,10 @@ import React from "react";
 import './Form.css';
 
 export default function CharacterForm() {
+
+    
+
+
     return (
         <form class="formClass char-form">
             <label>Character Name: </label>
@@ -14,6 +18,8 @@ export default function CharacterForm() {
             <input type="file"></input>
             <label>Character Dead?</label>
             <input  type="checkbox"></input>
+            <button>next</button>
+            <button>done</button>
         </form>
     );
 }
