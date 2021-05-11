@@ -3,7 +3,7 @@ import './Form.css';
 
 export default function CharacterForm() {
     return (
-        <form class="formClass">
+        <form class="formClass char-form">
             <label>Character Name: </label>
             <input
                 type="text"

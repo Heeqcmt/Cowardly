@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Main from './Main';
-import Header from './Header'
+import Header from './component/Header'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
