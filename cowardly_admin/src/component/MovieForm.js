@@ -12,9 +12,13 @@ export default function MovieForm(props){
     }
     function handleSubmit(e){
         e.preventDefault();
+        if(MovieDetail.name === "" || MovieDetail.desc === ""){
+            alert("can not be empty")
+            return false;
+        }
         props.getMovie(MovieDetail)
     }
-    
+
     function handleNameChange(e){
         setName(e.target.value);
     }
