@@ -2,6 +2,7 @@
 import React, {useState}from "react";
 import MovieForm from "./MovieForm";
 import CharacterForm from "./CharacterForm";
+import './NewMovie.css'
 
 
 
@@ -16,6 +17,11 @@ export default function NewMovie(){
     function getCharacter(char){
         setCharArray([...charArray,char]);
 
+    }
+
+    function handleSubmit(){
+        //package the final json
+        //send to database
     }
 
     const charDisplay = charArray.map(
@@ -35,6 +41,7 @@ export default function NewMovie(){
             
             <MovieForm getMovie={getMovie}/>
             <CharacterForm getCharacter={getCharacter}/>
+            <button className="full-button" onClick={handleSubmit}>done</button>
         </div>
     );
 }
