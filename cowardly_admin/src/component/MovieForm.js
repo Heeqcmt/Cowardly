@@ -5,10 +5,11 @@ export default function MovieForm(props){
 
     const [name, setName] = useState("");
     const [desc, setDesc] = useState("");
-
+    const [image, setImage] = useState();
     let MovieDetail = {
         name:name,
-        desc:desc
+        desc:desc,
+        banner:image
     }
     function handleSubmit(e){
         e.preventDefault();
@@ -40,7 +41,9 @@ export default function MovieForm(props){
             onChange={handleDescChange}
             ></textarea>
             <label>Select Banner for Movie</label>
-            <input type="file"></input>
+            <input type="file"
+            accept="image/png, img/jpeg"
+            />
             <button className="button-right" onClick={handleSubmit}>Submit</button>
         </form> 
 
