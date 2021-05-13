@@ -22,6 +22,17 @@ export default function NewMovie(){
     function handleSubmit(){
         //package the final json
         //send to database
+        const movieJson = JSON.stringify(movieDetail);
+        const charaArrayJson = JSON.stringify(charArray);
+
+        const final = {
+            Movie:movieJson,
+            Character:charaArrayJson
+        }
+
+        console.log(final);
+
+
     }
 
     const charDisplay = charArray.map(
