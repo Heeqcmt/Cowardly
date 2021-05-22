@@ -4,12 +4,12 @@
     gap:1em;
     background-color: rgba(240, 202, 131, 0.705);
     padding:1em;
-    margin-top: 1em;
-    margin-right:1em;
-    margin-left:1em;
+    margin:0 auto;
     border-radius: 1%;
-    
-
+    max-width: 60em;
+    width:75%;
+    margin-top:1em;
+    height: 40%;
 }
 
 .char-form{

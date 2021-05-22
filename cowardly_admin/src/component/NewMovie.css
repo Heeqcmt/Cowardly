@@ -1,4 +1,9 @@
 .full-button{
-    margin:1em 1em 0em 1em;
-    width: 97vw;
+    display:grid;
+    width:80%;
+    margin:0 auto;
+    margin-top: 1em;
+    max-width: 60em;
+    height: 3em;
+    font-weight: bold;
 }
